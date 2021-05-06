@@ -1,10 +1,18 @@
 @extends('layouts.app')
 
-@dd($paste)
-
 @section('titoloPagina', 'prodotti')
     
 @section('content')
-    <h1>Prodotti</h1>
-    <p>I miei prodotti</p>
+    <div class="container">
+        <div class="cards-container">
+            @foreach ($paste as $pasta)
+            <div class="card">
+                <img src="{{$pasta['src']}}" alt="">
+                <div class="layover">
+                    <p>{{$pasta['titolo']}}</p>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 @endsection

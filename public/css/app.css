@@ -1,3 +1,83 @@
-body {
-    background-color: yellow;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav > ul > li {
+    padding: 10px;
+    display: inline;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: large;
+}
+
+nav > ul > li:hover {
+    background-color: aqua;
+}
+
+main {
+    margin-top: 190px;
+}
+
+.home-banner-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-banner {
+    width: 100%;
+}
+
+.container {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 330px;
+    margin: 10px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.layover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card:hover .layover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

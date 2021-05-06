@@ -3,5 +3,7 @@
 @section('titoloPagina', 'Home')
 
 @section('content')
-    <h1>HOME</h1>
+    <div class="home-banner-container">
+        <img class="home-banner" src="{{asset('img/molisana-home.jpg')}}" alt="">
+    </div>
 @endsection
